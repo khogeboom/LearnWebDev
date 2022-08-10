@@ -1,0 +1,73 @@
+html {
+  font-size: 20px;
+}
+
+#percentages {
+  background-color: #6d6875;
+  width: 300px;
+  height: 300px;
+}
+
+/* Percentages % */
+#percentages div {
+  background-color: #e5989b;
+  width: 50%;
+  height: 50%;
+}
+
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+  line-height: 200%; /* relative to the font size so 200% of 40 = 80px */
+}
+
+/* EM */
+/* relative to the PARENT html element */
+/* 1em = font size of parent */
+/* 2em = twice the font size of parent */
+article {
+  font-size: 20px;
+}
+
+#em h2 {
+  font-size: 2em; /* font size inherited from article */
+  margin-left: 1em;
+}
+
+#em p {
+  font-size: 1em;
+}
+
+#em h3 {
+  font-size: 1.5em;
+}
+
+button {
+  font-size: 1em;
+  padding: 0 1em;
+  border-radius: 0.5em;
+  background-color: darkcyan;
+  color: white;
+}
+
+ul {
+  font-size: 1.5em; /* problem with ems = continues to grow/shrink if nested */
+}
+
+/* REM */
+/* relative to the ROOT html element */
+#rem h2 {
+  font-size: 3rem;
+}
+
+#rem h3 {
+  font-size: 2rem;
+}
+
+#rem ul {
+  font-size: 0.8rem;
+}
+
+#rem button {
+  font-size: 1.5rem;
+}

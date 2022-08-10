@@ -1,0 +1,20 @@
+h2 {
+  color: #5fcffc;
+  /* "background-color" used strictly to change bacground color */
+  background-color: rgb(89, 151, 0);
+}
+
+button {
+  color: magenta;
+  background-color: cyan;
+}
+
+p {
+  color: olive;
+  /* "background" can be used to change anything about the background (not just color) */
+  background: orange;
+}
+
+body {
+  background-color: #efd;
+}

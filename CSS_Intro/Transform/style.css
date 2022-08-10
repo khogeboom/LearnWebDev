@@ -1,0 +1,61 @@
+h1 {
+  background-color: darkcyan;
+  border: 5px solid #264653;
+  color: papayawhip;
+  padding: 0.7em;
+  width: 300px;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 20px auto;
+  font-family: Courier New;
+  font-weight: lighter;
+}
+
+h1:nth-of-type(2n) {
+  background-color: lightsalmon;
+}
+
+h1:nth-of-type(3n) {
+  background-color: salmon;
+}
+
+h1:nth-of-type(4n) {
+  background-color: orange;
+}
+
+section:first-of-type h1:nth-of-type(1) {
+  /* transform-origin: top right; */
+  transform: rotate(45deg);
+}
+
+section:first-of-type h1:nth-of-type(2) {
+  transform: scale(0.5);
+  /* transform: scale(2, 1); --> width scaled by 2, height scaled by 1 */
+  /* transform: scaleY(2) --> scales by 2 on y-axis */
+}
+
+section:first-of-type h1:nth-of-type(3) {
+  transform: translateX(200px);
+  /* transform: translateY(100px) */
+  /* transform: translate(200, 100) --> 200 x-axis, 100 y-axis */
+}
+
+section:nth-of-type(2) h1:nth-of-type(1) {
+  transform: skew(30deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(2) {
+  transform: skew(10deg, 5deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(3) {
+  transform: rotate(45deg) scale(0.75);
+}
+
+section:nth-of-type(2) h1:nth-of-type(4) {
+  transform: translateX(-300px) rotate(0.5turn) scaleY(1.5);
+}
+
+section:nth-of-type(2) {
+  transform: scale(0.5);
+}

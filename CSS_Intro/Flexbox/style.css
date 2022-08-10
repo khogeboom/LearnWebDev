@@ -1,0 +1,74 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#container {
+  background-color: #003049;
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  border: 5px solid #003049;
+  display: flex; /* turning on flexbox properties */
+  flex-direction: row;
+  /* flex direction property (main axis)
+        row = left to right
+        row-reverse = right to left
+        column = top to bottom
+        column-reverse = bottom to top
+    */
+  justify-content: center;
+  /* justify content (for row)
+        flex-start = items grouped to left side
+        flex-end = items grouped to right side
+        flex-center = items grouped in center
+        space-between = spread out from start to end
+        space-around = gives each element same amount of space around it
+        space-evenly = space is even between each element
+    */
+  flex-wrap: nowrap;
+}
+
+#container div {
+  width: 200px;
+  height: 200px;
+  /* max-width: 300px; */
+  flex-basis: 600px;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid black;
+  height: 500px;
+  display: flex;
+}
+
+main .sidebar {
+  background-color: #6930c3;
+  border: 2px solid white;
+  flex: 1 2 300px; /* shorthand: flex-grow | flex-shrink | flex-basis */
+}
+
+main .maincontent {
+  background-color: #80ffdb;
+  flex: 2 1 800px;
+}
+
+/* flex-wrap == deals with main axis */
+/* align-items == deals with cross axis */
+/* align-content == only used when we have wrap or wrap-reverse */
+
+/* align-self == align one element in flexbox rather than entire flexbox */
+
+/* flex-grow == how fast element should grow relative to other elements */
+/* flex-shrink == how fast element should shrink relative to other elements */
+
+/* flex-basis == inital size of flexible object */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmet Demo</title>
+  </head>
+  <body>
+    <!-- "main>section>h1" to get layout below -->
+    <main>
+      <section>
+        <h1></h1>
+      </section>
+    </main>
+
+    <!-- "h1+h2+h2" to get layout below -->
+    <h1></h1>
+    <h2></h2>
+    <h2></h2>
+
+    <!-- "ul>li*4" to get layout below -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <!-- "nav>ul>li*5>a" to get layout below -->
+    <nav>
+      <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </nav>
+
+    <!-- "nav>ul>li*5>a$" to get layout above with numbers -->
+    <nav>
+      <ul>
+        <li>
+          <a1></a1>
+        </li>
+        <li>
+          <a2></a2>
+        </li>
+        <li>
+          <a3></a3>
+        </li>
+        <li>
+          <a4></a4>
+        </li>
+        <li>
+          <a5></a5>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- "nav>ul>li*5>a[href=www.$.com]" to get layout below -->
+    <nav>
+      <ul>
+        <li><a href="www.1.com"></a></li>
+        <li><a href="www.2.com"></a></li>
+        <li><a href="www.3.com"></a></li>
+        <li><a href="www.4.com"></a></li>
+        <li><a href="www.5.com"></a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

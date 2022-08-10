@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Grids</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link ref="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-1 text-center text-primary">The Grid System</h1>
+
+      <div class="row">
+        <div class="col-2 bg-success">I AM 2 UNITS</div>
+        <div class="col-8 bg-danger">I AM 8 UNITS</div>
+        <div class="col-2 bg-success">I AM 2 UNITS</div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 bg-info">I AM 3 UNITS</div>
+        <div class="col-6 bg-warning">I AM 6 UNITS</div>
+        <div class="col-3 bg-info">I AM 3 UNITS</div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col bg-primary">I AM AUTO SIZED</div>
+          <div class="col bg-secondary">I AM AUTO SIZED</div>
+          <div class="col-5 bg-primary">I AM 5 UNITS</div>
+        </div>
+      </div>
+
+      <h2 class="display-4">Responsive Grid</h2>
+      <div class="row">
+        <div class="col-md-6 col-xl-3 bg-info">
+          <!-- read "after the medium break point and up the div should take up 6 units and anything below will go all the way across" -->
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod unde
+          quidem fugiat impedit expedita? Vel maiores magni autem. Aspernatur,
+          quo qui illo rem expedita sint quasi voluptatibus quod veniam itaque?
+        </div>
+        <div class="col-md-6 col-xl-3 bg-success">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          provident animi labore dicta voluptatibus soluta delectus alias
+          debitis eum unde id, tempora dolor numquam quisquam quos aut aliquid
+          earum? Repellendus!
+        </div>
+        <div class="col-md-6 col-xl-3 bg-info">
+          <!-- read "after the medium break point and up the div should take up 6 units and anything below will go all the way across" -->
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod unde
+          quidem fugiat impedit expedita? Vel maiores magni autem. Aspernatur,
+          quo qui illo rem expedita sint quasi voluptatibus quod veniam itaque?
+        </div>
+        <div class="col-md-6 col-xl-3 bg-success">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          provident animi labore dicta voluptatibus soluta delectus alias
+          debitis eum unde id, tempora dolor numquam quisquam quos aut aliquid
+          earum? Repellendus!
+        </div>
+      </div>
+
+      <h2>Grid Alignment</h2>
+      <div class="row align-items-center">
+        <div class="col-3 bg-danger">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
+          beatae repellendus. Neque ea magni possimus suscipit dolores
+          necessitatibus porro cumque nostrum, in optio beatae sequi ducimus
+          minima. Mollitia, ratione aliquid!
+        </div>
+        <div class="col-3 bg-warning">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio officiis
+          iusto voluptatem culpa. Dolores voluptas sed tempore corporis fugiat
+          quibusdam accusamus voluptatem vero nisi repellendus vel, sequi
+          dolorem consequuntur quia! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Repellendus praesentium perspiciatis optio impedit
+          sed amet inventore sit nesciunt quia nulla debitis blanditiis maxime
+          neque, voluptas, accusantium unde facere temporibus commodi. Lorem
+          ipsum dolor sit amet consectetur, adipisicing elit. Nam maxime
+          explicabo assumenda aliquam sint corporis earum vel, consequuntur,
+          saepe inventore mollitia vitae? Tenetur, sit. Itaque recusandae magnam
+          adipisci delectus quo.
+        </div>
+        <div class="col-3 bg-success">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, magni?
+          Quos nostrum minima dolores? Doloribus aperiam sint expedita adipisci
+          ea, ad porro voluptatem numquam ipsa odit blanditiis aliquid maiores
+          in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at
+          praesentium hic molestias rem, harum necessitatibus reprehenderit
+          exercitationem, magni, recusandae corrupti! Voluptatum odit dolore
+          enim maxime quae ipsum earum officiis.
+        </div>
+        <div class="col-3 bg-info align-self-end">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          numquam a. Aut eum perspiciatis, optio error ratione corrupti
+          distinctio quasi sequi expedita nobis quo nam architecto alias, minima
+          atque reprehenderit.
+        </div>
+      </div>
+
+      <h3>Justify Content</h3>
+      <div
+        class="row border justify-content-center justify-content-lg-start justify-content-xl-between"
+      >
+        <div class="col-md-4 bg-primary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut
+          voluptas ipsam nisi quis in, explicabo, est, laboriosam voluptates
+          illo alias. Harum cumque, nobis dolor dignissimos animi omnis commodi
+          rem?
+        </div>
+        <div class="col-md-4 bg-info">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          ipsam inventore illo eligendi commodi atque itaque molestiae!
+          Recusandae, a dolorum unde, odio corrupti, dolor iste ex deleniti
+          natus obcaecati aliquid?
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <img
+            class="img-fluid"
+            src="https://tse1.mm.bing.net/th/id/OIP.rTYiLTOpeqtMjWVadPHlcwHaE2?pid=ImgDet&rs=1"
+            alt=""
+          />
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <img
+            class="img-fluid"
+            src="https://tse2.mm.bing.net/th/id/OIP.5vUBZPCMyYWgixWVTDsAMQHaFH?pid=ImgDet&rs=1"
+            alt=""
+          />
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <img
+            class="img-fluid"
+            src="https://www.tarawildlife.com/wp-content/uploads/2014/03/prothonotary-warbler.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
